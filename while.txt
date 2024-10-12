@@ -1,0 +1,128 @@
+#include <stdio.h>
+
+int main() {
+    int a,i=1;
+    printf("enter number ");
+    scanf("%d",&a);
+    
+    while( i<11){
+        printf("%d \n",i*a);
+        i++;
+    }
+
+    return 0;
+}
+------------------------------------------------
+#include <stdio.h>
+
+int main() {
+    int num=23,rem,sum=0;
+    
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+---------------------------------------------
+#include <stdio.h>
+
+int main() {
+    int num,rem,sum=0;
+    printf("enter number ");
+    scanf("%d",&num);
+    int a=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(sum==a){
+        printf("palindrome");
+    }
+    else{
+        printf("not palindrome");
+    }
+
+    return 0;
+}
+-----------------------------------------------------------
+#include <stdio.h>
+
+int main() {
+    int num,rem,sum=0;
+    printf("enter number ");
+    scanf("%d",&num);
+    int a=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(sum==a){
+        printf("armstrong");
+    }
+    else{
+        printf("not armstrong");
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------
+#include <stdio.h>
+
+int main() {
+    int num,rem,sum=0;
+    printf("enter number ");
+    scanf("%d",&num);
+    int a=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem;
+        num=num/10;
+    }
+
+    printf("%d",sum);
+    
+
+    return 0;
+}
+----------------------------------------------
+#include<stdio.h>
+int main(){
+    int num=12;
+    int square = num*num; 
+    int rem, sum = 0;
+    while(square>0){
+        rem = square%10;
+        sum = sum+rem;
+        square = square/10;
+    }
+    printf("%d %d\n",num,sum);
+    if(num==sum){
+        printf("neon");
+    }
+    else{
+        printf("not neon");
+    }
+    return 0;
+}
+--------------------------------------------------
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter num ");
+    scanf("%d",&num);
+    int rem, sum = 0;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem;
+        num = num/10;
+    }
+    printf("sum is %d\n",sum);
+  
+    return 0;
+}

@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("enter a number: ");
+    scanf("%d",&a);
+    if (a>10){
+        printf("a is greater than 10");
+    }
+    else{
+      printf("a is not greater than 10");
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("enter a number: ");
+    scanf("%d",&a);
+    if (a>50){
+        printf("a is greater than 50");
+    }
+    else{
+      printf("a is not greater than 50");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("enter a number: ");
+    scanf("%d",&a);
+    if (a<10){
+        printf("a is less than 10");
+    }
+    else{
+      printf("a is not less than 10");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("enter a number: ");
+    scanf("%d",&a);
+    if (a<67){
+        printf("a is less than 67");
+    }
+    else{
+      printf("a is not less than 67");
+    }
+
+    return 0;
+}

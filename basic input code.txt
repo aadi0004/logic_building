@@ -1,0 +1,75 @@
+ #include <stdio.h>
+
+int main() {
+    int a=34;
+    int b=23;
+    // without third variable
+    printf("Before swaapping a: %d\n",a);
+    printf("Before swaapping b: %d\n",b);
+    
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    
+    printf("after swaapping a: %d\n",a);
+     printf("after swaapping b: %d\n",b);
+
+    return 0;
+}
+------------------------------------------------------------------------------------------
+
+ #include <stdio.h>
+
+int main() {
+    int a=34;
+    int b=23;
+    int c;
+    // with third variable
+    printf("Before swaapping a: %d\n",a);
+    printf("Before swaapping b: %d\n",b);
+    
+    c=a;
+    a=b;
+    b=c;
+    
+    printf("after swaapping a: %d\n",a);
+     printf("after swaapping b: %d\n",b);
+
+
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------
+ #include <stdio.h>
+
+int main() {
+    int a;
+    printf("enter integer value: " );
+    scanf("%d",&a);
+    printf("%d",a);
+    return 0;
+}
+  
+
+------------------------------------------------------------------------------------------
+ #include <stdio.h>
+
+int main() {
+    float a;
+    printf("enter decimal value: " );
+    scanf("%f",&a);
+    printf("%f",a);
+    return 0;
+}
+
+------------------------------------------------------------------------------------------
+ #include <stdio.h>
+
+int main() {
+    char a;
+    printf("enter single char " );
+    scanf("%c",&a);
+    printf("%c",a);
+    return 0;
+}

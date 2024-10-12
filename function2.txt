@@ -1,0 +1,291 @@
+#include <stdio.h>
+void add(int a,int b);
+void sub(int a,int b);
+void mul(int a,int b);
+void div(int a,int b);
+void module(int a,int b);
+
+int main() {
+    int a,b;
+    printf("enter a and b\n");
+    scanf("%d %d",&a,&b);
+    add(a,b);
+    sub(a,b);
+    mul(a,b);
+    div(a,b);
+    module(a,b);
+
+    return 0;
+}
+void add(int a,int b){
+    printf("sum is: %d \n",a+b);
+}
+void sub(int a,int b){
+    printf("sub is: %d \n",a-b);
+}
+void mul(int a,int b){
+    printf("multiply is: %d \n",a*b);
+}
+void div(int a,int b){
+    printf("div is: %d \n",a/b);
+}
+void module(int a,int b){
+    printf("modulas is: %d \n",a%b);
+}
+--------------------------------------------------------------------------------
+
+#include <stdio.h>
+void even(int a);
+void vote(int age);
+void greater(int d,int b, int c);
+void temp(int e);
+void marksheet(int a,int b,int c,int d,int e);
+void bill(int unit);
+void calender(int month);
+void swap(int num1,int num2);
+void swapt(int num1,int num2);
+void tax(int s);
+void salery(int holiday);
+
+int main() {
+    // int a;
+    // printf("enter a num  ");
+    // scanf("%d",&a);
+    // even(a);
+    
+    // int age;
+    // printf("\nenter age  ");
+    // scanf("%d",&age);
+    // vote(age);
+    
+    // int d,b,c;
+    // printf("\nenter three numbers ");
+    // scanf("%d %d %d",&d,&b,&c);
+    // greater(a,b,c);
+    
+    // int e;
+    // printf("\n enter temperature in celcius \n");
+    // scanf("%d",&e);
+    // temp(e);
+    
+    // int a,b,c,d,e;
+    // printf("enter marks of five subject out of 100 ");
+    // scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    // marksheet(a,b,c,d,e);
+    
+    // int unit;
+    // printf("enter your total units ");
+    // scanf("%d",&unit);
+    // bill(unit);
+
+    // int holiday;
+    // printf("enter your total holydays ");
+    // scanf("%d",&holiday);
+    // salery(holiday);
+    
+    // int month;
+    // printf("Enter any month in number : ");
+    // scanf("%d",&month);
+    // calender(month);
+    
+    // int num1,num2;
+    // printf("enter num1 and num2 ");
+    // scanf("%d %d",&num1,&num2);
+    // swap(num1,num2);
+    // swapt(num1,num2);
+    
+    int s;
+    printf("enter your anual salery \n");
+    scanf("%d",&s);
+    tax(s);
+    
+    return 0;
+}
+void even(int a){
+    if(a%2==0){
+        printf("even");
+    }
+    else{
+        printf("odd");
+    }
+}
+void vote(int age){
+    
+    if (age>=18){
+        printf("vaild to vote \n");
+    }
+    else{
+        printf(" not vaild to vote\n");
+    }
+}
+void greater(int d,int b, int c){
+    if(d>b && d>c){
+        printf("%d is maximum",d);
+    }
+    else if (b>d && b>c){
+        printf("%d is maximum",b);
+    }
+    else{
+        printf("%d is maximum",c);
+    }
+}
+void temp(int e){
+        float F = (e * (9.0/5) + 32);
+        printf("temperature in fornahite is %.2f",F);
+}
+void marksheet(int a,int b,int c,int d,int e){
+    
+    int total=a+b+c+d+e;
+    float p=(total/500.0)*100.0;
+    printf("persentage is %.2f \n",p);
+    
+    if (p<25){
+        printf("fail");
+    }
+    else if(p>=25 && p<=45){
+        printf("E grade");
+    }
+    else if(p>45 && p<=50){
+        printf("D grade");
+    }else if(p>50 && p<=60){
+        printf("C grade");
+    }else if(p>60 && p<=80){
+        printf("B grade");
+    }
+    else if(p>80){
+        printf("A grade");
+    }
+    else {
+        printf("invalid input");
+    }
+}
+void bill(int unit){
+    printf("name: kajal kumawat\n");
+    
+    float bill=unit*10.0;
+    printf("amount: %.2f \n",bill);
+    
+    if (unit<=10 && unit>1){
+        printf("discount 10% \n");
+        printf("total pay amount :%.2f \n",bill-(bill*0.1));
+    }
+    
+    if (unit<=11 && unit>20){
+        printf("discount 15% \n");
+        printf("total pay amount :%.2f \n",bill-(bill*0.15));
+    }
+    if (unit<=21 && unit>40){
+        printf("discount 30% \n");
+        printf("total pay amount :%.2f \n",bill-(bill*0.3));
+    }
+    if (unit<=40 && unit>50){
+        printf("discount 40% \n");
+        printf("total pay amount :%.2f \n",bill-(bill*0.4));
+    }
+    if (unit>=50){
+        printf("discount 50% \n");
+        printf("total pay amount :%.2f \n",bill-(bill*0.5));
+    }
+}
+void calender(int month){
+         
+         if (month==1){
+             printf("January ");
+         }
+         else if (month==2){
+             printf("February ");
+         }
+         else if (month==3){
+             printf("March ");
+         }
+         else if (month==4){
+             printf("April  ");
+         }
+         else if (month==5){
+             printf("May ");
+         }
+         else if (month==6){
+             printf("June ");
+         }
+         else if (month==7){
+             printf("July ");
+         }
+         else if (month==8){
+             printf("August ");
+         }
+         else if (month==9){
+             printf("September");
+         }
+         else if (month==10){
+             printf("October ");
+         }
+         else if (month==11){
+             printf("November ");
+         }
+         else if (month==12){
+             printf("December  ");
+         }
+}
+void swap(int num1,int num2){
+        
+        printf("num1 is %d and num2 is %d \n",num1,num2);
+
+        
+        num1=num1+num2;
+        num2=num1-num2;
+        num1=num1-num2;
+        printf("num1 is %d and num2 is %d",num1,num2);
+}
+void swapt(int num1,int num2){
+        int num3;
+        printf("num1 is %d and num2 is %d \n",num1,num2);
+
+        
+        num3=num1;
+        num1=num2;
+        num2=num3;
+        printf("num1 is %d and num2 is %d",num1,num2);
+}
+void tax(int s){
+    float tax;
+    
+    if(s<300000){
+        tax=s*0.1;
+    }
+    else if(s>=300000 && s<700000){
+        tax=s*0.2;
+    }
+    else{
+        tax=s*0.3;
+    }
+    printf("tax is %.2f",tax);
+}
+
+void salery(int holiday){
+    printf("name: kajal kumawat\n");
+    printf("address: regex software\n");
+    printf("bank details :SBI 982323*****\n");
+    printf("salery: 50000\n");
+    int salery= 50000;
+
+
+    
+    if (holiday==1){
+        printf("alot:%d",salery);
+    }
+    else if (holiday>=2 && holiday<5){
+        printf("alot :%d",salery-2500);
+    }
+    else if (holiday>=2 && holiday<5){
+        printf("alot :%d",salery-2500);
+    }
+    else if (holiday>=5 && holiday<=14){
+        printf("alot :%d",salery-5000);
+    }
+    else if (holiday==15){
+        printf("alot :%d",salery-25000);
+    }
+    else{
+        printf("alot: not salery");
+    }
+}

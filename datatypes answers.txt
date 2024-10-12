@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+int main() {
+    int a=67;
+    printf("%d",a);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    float a=9.86;
+    printf("%f",a);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    float a= -353.54;
+    printf("%f",a);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    char c='n';
+    printf("%c",c);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    float a= -23;
+    printf("%d",a);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+Data type :
+	-> data type is used to store the different different types of variables value like int, char , float etc.
+
+------------------------------------------------------------------------------------------------
+
+variable :
+	-> variables is used to store the value 
+	-> used to access the value easily
+
+------------------------------------------------------------------------------------------------
+
+types of data type :
+	-> 1. premitive data type(int , char, float )
+	-> 2. non premitive data type
+
+------------------------------------------------------------------------------------------------
+
+compiler :	
+	-> used to compile the code 
+	-> make code understandable to the machine
+	-> converts source code to machine code
+
+------------------------------------------------------------------------------------------------
+machine code: 
+	-> machine's understandable code.
+	-> it's in binary form (0 and 1).
+	-> only computer hardware can unerstand that code.

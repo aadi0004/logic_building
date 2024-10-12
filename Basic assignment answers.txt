@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+int main() {
+    printf("Hello world ");
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    printf("Welcome to India\n");
+    printf("how are you");
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    printf("shiv\naaditya\nkhemraj\npramod \nsunil ");
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    printf("india\npakisthan\namerica\njapan \nchine ");
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    printf("jaipur\nkota\njodhpur\nbikaner \najmer ");
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------
+
+c : -> c is a genral purpose language .
+	-> c is mother language of all language(like python java).
+	-> c is structural languange.
+	-> it have fixed formate.
+	-> c is plateform dependent language.
+	-> mid level language.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+structural programming language : 
+	-> which language have a particular and fixed structure for code called structural programming language (like c language)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+procedural programming language :
+	-> procedural programming language means the language which follows the step by step instructions/code. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+plateform dependent :
+	-> it means a program or code that can run on a specific computer	
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Features :
+	-> Portability, Middle-Level Language ,Rich set of built-in Operators, Procedural Language,Fast ,
